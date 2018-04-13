@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:background="#C0C0C0"
+    tools:context="com.bx.verticalmarqueeview.MainActivity">
+
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ico_news"/>
+    <com.bx.marqueeviewlibrary.MarqueeView
+        android:id="@+id/marqueeview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        app:interval="1500"
+        app:textColor="#000"
+        app:animDuration="800"
+        app:textSize="5sp">
+    </com.bx.marqueeviewlibrary.MarqueeView>
+
+</LinearLayout>
