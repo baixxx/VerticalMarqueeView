@@ -5,21 +5,14 @@
 ### 效果图如下:
 ![](https://github.com/baixxx/VerticalMarqueeView/raw/master/resource/marqueeview.gif)  
 
-| 第一列     | 第二列     |
- | :-----------:  | :-----------: |
- | 第一列     | 第二列     |
- | :-----------:  | :-----------: |
- | 第一列     | 第二列     |
+
 
 ### 自定义属性
 | Attribute属性    | Description描述 |
 | :----------: | :-----------:  | 
 | interval	     | 文字滚动间隔时间 |
-| :----------: | :-----------:  | 
 | animaDuration	 | 动画持续时间 |
-| :----------: | :-----------:  | 
 | textSize	| 文字大小  |
-| :----------: | :-----------: | 
 | textColor | 文字颜色  |
 
 
