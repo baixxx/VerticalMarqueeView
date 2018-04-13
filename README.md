@@ -5,9 +5,9 @@
 ### 效果图如下:
 ![](https://github.com/baixxx/VerticalMarqueeView/raw/master/resource/marqueeview.gif)  
 
-| 表格      | 第一列     | 第二列     |
-| ---------- | :-----------:  | :-----------: |
-| 第一行     | 第一列     | 第二列     |
+| 第一列     | 第二列     |
+ | :-----------:  | :-----------: |
+ | 第一列     | 第二列     |
 
 ### 自定义属性
 | Attribute属性    | Description描述 |
