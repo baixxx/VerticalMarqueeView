@@ -32,6 +32,7 @@
 ```
 
 ###集成
+
 第 1 步、在工程的 build.gradle 中添加：
 ```
 allprojects {
