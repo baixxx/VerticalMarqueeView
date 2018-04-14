@@ -31,6 +31,8 @@
     </com.bx.marqueeviewlibrary.MarqueeView>
 ```
 
+###集成
+[![](https://jitpack.io/v/baixxx/VerticalMarqueeView.svg)](https://jitpack.io/#baixxx/VerticalMarqueeView)
 
 
 
