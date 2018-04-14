@@ -31,9 +31,9 @@
     </com.bx.marqueeviewlibrary.MarqueeView>
 ```
 
-##集成
+## 集成
 
-###第 1 步、在工程的 build.gradle 中添加：
+### 第 1 步、在工程的 build.gradle 中添加：
 ```
 allprojects {
 		repositories {
@@ -42,7 +42,7 @@ allprojects {
 		}
 	}
 ```
-###第 2 步、在应用的 build.gradle 中添加：
+### 第 2 步、在应用的 build.gradle 中添加：
 ```
 dependencies {
 	        compile 'com.github.baixxx:VerticalMarqueeView:v1.0'
