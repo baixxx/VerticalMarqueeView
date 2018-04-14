@@ -32,6 +32,22 @@
 ```
 
 ###集成
+第 1 步、在工程的 build.gradle 中添加：
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+第 2 步、在应用的 build.gradle 中添加：
+```
+dependencies {
+	        compile 'com.github.baixxx:VerticalMarqueeView:v1.0'
+	}
+ ```
+ 
 [![](https://jitpack.io/v/baixxx/VerticalMarqueeView.svg)](https://jitpack.io/#baixxx/VerticalMarqueeView)
 
 
