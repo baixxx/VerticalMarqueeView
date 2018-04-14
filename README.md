@@ -49,7 +49,9 @@ dependencies {
 	}
  ```
  
- [![](https://jitpack.io/v/baixxx/VerticalMarqueeView.svg)](https://jitpack.io/#baixxx/VerticalMarqueeView)
+[![](https://jitpack.io/v/baixxx/VerticalMarqueeView.svg)](https://jitpack.io/#baixxx/VerticalMarqueeView)
+
+
 
 
 
