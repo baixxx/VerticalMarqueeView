@@ -21,19 +21,19 @@ public class MarqueeView extends ViewFlipper {
     /**
      * 滚动间隔时间
      */
-    private int interval;
+    private int mvInterval;
     /**
      * 动画持续时间
      */
-    private int animDuration;
+    private int mvAnimDuration;
     /**
      * 文字大小
      */
-    private int textSize;
+    private int mvTextSize;
     /**
      * 文字颜色
      */
-    private int textColor;
+    private int mvTextColor;
     private Context context;
     /**
      * 当前消息位置
@@ -56,12 +56,12 @@ public class MarqueeView extends ViewFlipper {
     private void init(Context context,AttributeSet attrs){
         this.context = context;
         TypedArray typedArray = context.obtainStyledAttributes(attrs,R.styleable.MarqueeViewStyle);
-        interval = typedArray.getInteger(R.styleable.MarqueeViewStyle_interval,interval);
-        animDuration = typedArray.getInteger(R.styleable.MarqueeViewStyle_animDuration,animDuration);
-        textSize = (int) typedArray.getDimension(R.styleable.MarqueeViewStyle_textSize,textSize);
-        textColor = typedArray.getColor(R.styleable.MarqueeViewStyle_textColor,textColor);
+        mvInterval = typedArray.getInteger(R.styleable.MarqueeViewStyle_interval,mvInterval);
+        mvAnimDuration = typedArray.getInteger(R.styleable.MarqueeViewStyle_animDuration,mvAnimDuration);
+        mvTextSize = (int) typedArray.getDimension(R.styleable.MarqueeViewStyle_textSize,mvTextSize);
+        mvTextColor = typedArray.getColor(R.styleable.MarqueeViewStyle_textColor,mvTextColor);
         typedArray.recycle();
-        setFlipInterval(interval);
+        setFlipInterval(mvInterval);
     }
 
     /**
@@ -123,8 +123,8 @@ public class MarqueeView extends ViewFlipper {
     private TextView createTextView(int pos,List<? extends Object> notices){
         TextView textView = new TextView(context);
         textView.setText(notices.get(pos).toString());
-        textView.setTextSize(textSize);
-        textView.setTextColor(textColor);
+        textView.setTextSize(mvTextSize);
+        textView.setTextColor(mvTextColor);
         textView.setGravity(Gravity.CENTER_VERTICAL);
         return textView;
     }
@@ -134,11 +134,11 @@ public class MarqueeView extends ViewFlipper {
      */
     private void setInAndOutAnimation() {
         Animation inAnim = AnimationUtils.loadAnimation(getContext(), R.anim.anim_bottom_into);
-        inAnim.setDuration(animDuration);
+        inAnim.setDuration(mvAnimDuration);
         setInAnimation(inAnim);
 
         Animation outAnim = AnimationUtils.loadAnimation(getContext(), R.anim.anim_top_out);
-        outAnim.setDuration(animDuration);
+        outAnim.setDuration(mvAnimDuration);
         setOutAnimation(outAnim);
     }
 }
