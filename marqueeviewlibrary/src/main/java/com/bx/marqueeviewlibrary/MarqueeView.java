@@ -56,10 +56,10 @@ public class MarqueeView extends ViewFlipper {
     private void init(Context context,AttributeSet attrs){
         this.context = context;
         TypedArray typedArray = context.obtainStyledAttributes(attrs,R.styleable.MarqueeViewStyle);
-        mvInterval = typedArray.getInteger(R.styleable.MarqueeViewStyle_interval,mvInterval);
-        mvAnimDuration = typedArray.getInteger(R.styleable.MarqueeViewStyle_animDuration,mvAnimDuration);
-        mvTextSize = (int) typedArray.getDimension(R.styleable.MarqueeViewStyle_textSize,mvTextSize);
-        mvTextColor = typedArray.getColor(R.styleable.MarqueeViewStyle_textColor,mvTextColor);
+        mvInterval = typedArray.getInteger(R.styleable.MarqueeViewStyle_mvInterval,mvInterval);
+        mvAnimDuration = typedArray.getInteger(R.styleable.MarqueeViewStyle_mvAnimDuration,mvAnimDuration);
+        mvTextSize = (int) typedArray.getDimension(R.styleable.MarqueeViewStyle_mvTextSize,mvTextSize);
+        mvTextColor = typedArray.getColor(R.styleable.MarqueeViewStyle_mvTextColor,mvTextColor);
         typedArray.recycle();
         setFlipInterval(mvInterval);
     }
