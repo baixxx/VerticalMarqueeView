@@ -45,11 +45,12 @@ allprojects {
 ### 第 2 步、在应用的 build.gradle 中添加：
 ```
 dependencies {
-	        compile 'com.github.baixxx:VerticalMarqueeView:v1.2'
+	        compile 'com.github.baixxx:VerticalMarqueeView:v1.3'
 	}
  ```
  
 [![](https://jitpack.io/v/baixxx/VerticalMarqueeView.svg)](https://jitpack.io/#baixxx/VerticalMarqueeView)
+
 
 
 
