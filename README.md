@@ -10,10 +10,10 @@
 ## 自定义属性
 | Attribute属性    | Description描述 |
 | :----------: | :-----------:  | 
-| interval	     | 文字滚动间隔时间 |
-| animaDuration	 | 动画持续时间 |
-| textSize	| 文字大小  |
-| textColor | 文字颜色  |
+| mvInterval	     | 文字滚动间隔时间 |
+| mvAnimaDuration	 | 动画持续时间 |
+| mvTextSize	| 文字大小  |
+| mvTextColor | 文字颜色  |
 
 
 
@@ -24,10 +24,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingLeft="20dp"
-        app:interval="1500"
-        app:textColor="#000"
-        app:animDuration="800"
-        app:textSize="5sp">
+        app:mvInterval="1500"
+        app:mvTextColor="#000"
+        app:mvAnimDuration="800"
+        app:mvTextSize="5sp">
     </com.bx.marqueeviewlibrary.MarqueeView>
 ```
 
@@ -45,11 +45,12 @@ allprojects {
 ### 第 2 步、在应用的 build.gradle 中添加：
 ```
 dependencies {
-	        compile 'com.github.baixxx:VerticalMarqueeView:v1.0'
+	        compile 'com.github.baixxx:VerticalMarqueeView:v1.2'
 	}
  ```
  
-[![](https://jitpack.io/v/baixxx/VerticalMarqueeView.svg)](https://jitpack.io/#baixxx/VerticalMarqueeView)
+ [![](https://jitpack.io/v/baixxx/VerticalMarqueeView.svg)](https://jitpack.io/#baixxx/VerticalMarqueeView)
+
 
 
 
